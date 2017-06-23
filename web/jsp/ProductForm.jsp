@@ -23,6 +23,8 @@
                 <input type="text" id="description" name="description" tabindex="2"><br>
                 <label for="price">Price:</label>
                 <input for="price" id="price" name="price" tabindex="3"><br>
+                <label for="images">Produce image:</label>
+                <input type="file" id="images" name="images" multiple>
                 <div id="buttons">
                     <label> </label>
                     <input type="reset" id="reset" tabindex="4">

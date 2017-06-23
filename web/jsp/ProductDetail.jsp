@@ -19,6 +19,7 @@
             Product Name: ${product.name}<br>
             Description: ${product.description}<br>
             Price:${product.price}
+        ${product.images[0].originalFilename}
         </p>
     </div>
 

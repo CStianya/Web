@@ -1,8 +1,11 @@
 package com.dao.entity;
 
+import org.springframework.web.multipart.MultipartFile;
+
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * Created by CS on 2017/6/22.
@@ -18,6 +21,8 @@ public class Product implements Serializable {
     private String description;
 
     private float price;
+
+    private List<MultipartFile> images;
 
     public long getId() {
         return id;
@@ -49,5 +54,13 @@ public class Product implements Serializable {
 
     public void setPrice(float price) {
         this.price = price;
+    }
+
+    public List<MultipartFile> getImages() {
+        return images;
+    }
+
+    public void setImages(List<MultipartFile> images) {
+        this.images = images;
     }
 }
